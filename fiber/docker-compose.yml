@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6.0.4
+    restart: unless-stopped
+    container_name: fiber-api-demo
+    hostname: host-mongo-fiber-api
+    ports:
+      - "27017:27017"

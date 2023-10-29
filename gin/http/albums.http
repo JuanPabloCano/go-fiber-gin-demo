@@ -1,0 +1,30 @@
+GET http://localhost:8080/albums
+Accept: application/json
+
+###
+
+POST http://localhost:8080/albums
+Content-Type: application/json
+
+{
+  "ID": "4",
+  "Title": "Meteora",
+  "Artist": "Linkin Park",
+  "Year": 2003
+}
+
+###
+GET http://localhost:8080/albums/1
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/albums/4
+Content-Type: application/json
+
+{
+  "ID": "4",
+  "Title": "Meteora updated",
+  "Artist": "Linkin Parkinson",
+  "Year": 2003
+}
